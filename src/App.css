@@ -1,0 +1,38 @@
+.container {
+  text-align: center;
+  margin: 50px;
+}
+
+.whole-drum {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  grid-template-rows: repeat(3, 1fr);
+  margin: 50px auto;
+  width: min-content;
+  border: 7px solid snow;
+  background-color: snow;
+  border-radius: 1px;
+}
+
+.drum-pad {
+  width: 90px;
+  height: 90px;
+  border: 5px solid #004225;
+  background-color: #FF8000;
+  color: #004225;
+  font-size: 30px;
+  border-radius: 1px;
+  box-shadow: 3px 3px 7px #004225;
+  transition: all 0.033s ease-in-out;
+}
+
+.drum-pad:active {
+  transform: translate(3px, 3px);
+}
+
+#display {
+  border: 3px solid #004225;
+  font-size: 23px;
+  color: snow;
+}
